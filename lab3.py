@@ -7,6 +7,10 @@ class Car:
         self.transmission = object.get('transmission')
         self.body = object.get('body')
 
+    def test(self):
+        print(self.__repr__())
+        print(self.__str__())
+
 class SUV(Car):
     type = 'SUV'
 
@@ -35,7 +39,10 @@ def main():
     for i in range(len(suv_objects)):
         suv.append(SUV(suv_objects[i]))
 
-    print(car[1].__repr__())
-    print(car[1].__str__())
+    # print(car[1].__repr__())
+    # print(car[1].__str__())
+
+    car[1].test()
+    suv[0].test()
 if __name__ == '__main__':
     main()
