@@ -39,9 +39,6 @@ def main():
     for i in range(len(suv_objects)):
         suv.append(SUV(suv_objects[i]))
 
-    # print(car[1].__repr__())
-    # print(car[1].__str__())
-
     car[1].test()
     suv[0].test()
 if __name__ == '__main__':
