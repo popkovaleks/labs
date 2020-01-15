@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Лабораторная работа 8</title>
+    <link type="text/css" rel="stylesheet" href="/static/styles.css">
+
+</head>
+<body>
+    <div class="container">
+        {% for row in data %}
+            <span>{{ row[1]['№'] }}</span>
+            <span>{{ row[1]['Субъект РФ'] }}</span>
+            <span>{{ row[1]['1959'] }}</span>
+            <span>{{ row[1]['1970'] }}</span>
+            <span>{{ row[1]['1979'] }}</span>
+            <span>{{ row[1]['1989'] }}</span>
+            <span>{{ row[1]['2002'] }}</span>
+            <span>{{ row[1]['2010'] }}</span>
+            <span>{{ row[1]['2013'] }}</span>
+            <span>{{ row[1]['2014'] }}</span>
+            <span>{{ row[1]['2015'] }}</span>
+            <span>{{ row[1]['2016'] }}</span>
+            <span>{{ row[1]['2017'] }}</span>
+            <span>{{ row[1]['2018'] }}</span>
+        {% endfor %}
+    </div>
+</body>
+</html>
